@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/spectre.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My - Vcard</title>
+</head>
+
+<body>
+
+    <div id="wrapper" class="container">
+        <nav id="navigation" class="container">
+            <ul class="tab tab-block">
+                <li name="1" class="tab-item active" onclick="changeFocus('accueil',0)"><a href="#">Accueil</a></li>
+                <li name="2" class="tab-item" onclick="changeFocus('formation',1)"><a href="#">Formations</a></li>
+                <li name="3" class="tab-item" onclick="changeFocus('professionel',2)"><a href="#">Parcours professionnel</a></li>
+                <li name="4" class="tab-item" onclick="changeFocus('skills',3)"><a href="#">Compétences</a></li>
+                <li name="5" class="tab-item" onclick="changeFocus('otherInteress',4)"><a href="#">Autres intérêts</a></li>
+            </ul>
+        </nav>
+        <section class="container">
+            <div id="mainPage" class="container">
+                <article id="accueil" class="col-12 columns container section section-active">
+
+                </article>
+                <section class="col-12 section section-hidden" id="formation">
+                    <header class="titre">
+                        Mes formations et Etudes
+                    </header>
+                    <article>
+                        <p> WebDesigner – Mutation Media</p>
+                        <p>2005-2012</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </article>
+
+                    <article>
+                        <p>WebDesigner – Mutation Media</p>
+                        <p>2005-2012</p>
+                        <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>.</article>
+                </section>
+                <article>
+                    <p> WebDesigner – Mutation Media</p>
+                    <p>2005-2012</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </article>
+
+                <article>
+                    <p>WebDesigner – Mutation Media</p>
+                    <p>2005-2012</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>.</article>
+        </section>
+        <article class="col-12 section section-hidden" id="professionel">
+            Parcours professionnels
+        </article>
+        <article class="col-12 section section-hidden" id="skills">
+            Mes compétences
+        </article>
+        <article class="col-12 section section-hidden" id="otherInteress">
+            Autres
+        </article>
+
+        </div>
+        </section>
+    </div>
+    <script src="js/actions.js"></script>
+</body>
+
+</html>

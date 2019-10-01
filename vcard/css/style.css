@@ -1,0 +1,288 @@
+ @import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,600&display=swap');
+ body {
+     overflow: hidden;
+     background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+     height: 100vh;
+     width: 100vw;
+     font-family: "Raleway";
+     size: 1em;
+     color: darkslategrey;
+     line-height: 1.3em;
+ }
+ 
+ #wrapper {
+     width: 60vw;
+     height: 90vh;
+     margin: auto !important;
+     margin-top: 10px !important;
+ }
+ 
+ #mainPage {
+     display: block;
+     overflow-y: auto;
+     min-height: 100%;
+ }
+ 
+ #professionel {
+     background-color: orangered;
+ }
+ 
+ #otherInteress {
+     background-color: rgb(41, 37, 37);
+     min-height: 100% !important;
+ }
+ /* navigation */
+ 
+ .tab-item,
+ .tab-block {
+     margin: 0 !important;
+     padding: 0 !important;
+ }
+ 
+ .tab-item {
+     margin: 0 !important;
+     background-color: rgb(48, 42, 66);
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     margin-right: 2px !important;
+     color: #fff;
+ }
+ 
+ .tab-item:hover a {
+     color: #fff !important;
+ }
+ 
+ .tab-item:hover {
+     background-color: orangered !important;
+     color: #000;
+ }
+ 
+ .tab .tab-item.active a,
+ .tab .tab-item a.active {
+     background-color: #fff;
+     color: orangered !important;
+     border-bottom-color: orangered;
+ }
+ 
+ .tab-item a {
+     padding: 2vh 0 !important;
+ }
+ 
+ #mainPage {
+     position: relative;
+     background-color: #fff;
+     height: 90vh;
+ }
+ /* LAYOUT */
+ 
+ .section {
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
+ 
+ article {
+     margin-top: 10px !important;
+ }
+ 
+ section>article {
+     padding-left: 20px !important;
+ }
+ 
+ .section-active {}
+ 
+ .section-hidden {
+     display: none;
+ }
+ 
+ .myName {
+     margin-top: 2vh;
+     margin-left: 5vw;
+     border-bottom: 2px solid #962525;
+     color: #962525;
+     font-family: "Pacifico";
+     font-size: 3em;
+     margin-bottom: 0;
+ }
+ 
+ .subTitle {
+     float: right;
+     margin-top: 0 !important;
+ }
+ 
+ .img-responsive {
+     width: 20vw;
+ }
+ 
+ #otherInteress img {
+     width: 100px;
+     padding-top: 25px;
+ }
+ 
+ .divider {
+     margin: auto !important;
+     width: 85%;
+ }
+ /* TYPOGRAPHIE */
+ 
+ .titre {
+     margin-top: 10px;
+     display: block;
+     font-size: 1.3em;
+     font-weight: 600;
+     text-transform: capitalize;
+     color: #fff;
+     background-color: orangered;
+     padding: 10px 10px;
+     text-align: center;
+ }
+ 
+ .sousTitre {
+     font-size: 1.5em;
+     font-weight: 600;
+     margin-top: 15px;
+ }
+ 
+ .sousTitre::before {
+     font-family: "Font Awesome 5 Free";
+     content: "\f0da";
+     color: orangered;
+     padding-right: 10px;
+ }
+ 
+ .date {
+     display: inline-block;
+     padding: 5px 5px;
+     font-size: 1.1em;
+     color: #fff;
+     background: orangered;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+ }
+ 
+ .date::before {
+     content: "";
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-top: 10px solid orangered;
+     position: absolute;
+     margin-top: 20px;
+ }
+ 
+ .date-light {
+     display: inline-block;
+     padding: 5px 5px;
+     font-size: 1.1em;
+     color: orangered !important;
+     background: #fff;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+ }
+ 
+ .date-light::before {
+     content: "";
+     border-left: 10px solid transparent;
+     border-right: 10px solid transparent;
+     border-top: 10px solid #fff;
+     position: absolute;
+     margin-top: 20px;
+ }
+ 
+ .sousTitre-light {
+     font-size: 1.5em;
+     font-weight: 600;
+     margin-top: 15px;
+ }
+ 
+ .sousTitre-light::before {
+     font-family: "Font Awesome 5 Free";
+     content: "\f0da";
+     color: rgb(255, 255, 255);
+     padding-right: 10px;
+ }
+ 
+ .columns {
+     margin: 0px !important;
+     padding: 0px !important;
+ }
+ 
+ .bar {
+     margin: 10px 0px !important;
+ }
+ 
+ .bar-item {
+     height: 20px !important;
+     background-color: rgb(30, 99, 226);
+     text-transform: capitalize;
+ }
+ 
+ .bar-item>.bar-item {
+     background-color: orangered;
+ }
+ 
+ .social-buttons {
+     margin-top: 70px;
+ }
+ 
+ .fb {
+     margin-left: 0;
+     width: 40px !important;
+     height: 40px;
+     background-color: rgb(46, 39, 58);
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 2px;
+ }
+ /* test */
+ 
+ .test {
+     background-color: pink;
+ }
+ 
+ .container {
+     padding-right: 0;
+ }
+
+
+<div class="before-panel">
+                            <div class="panel boxShadowPaper">
+                                <div class="panel-header">
+                                    <div class="panel-title">2011-2014</div>
+                                </div>
+                                <div class="panel-nav">
+                                    Web Developer
+                                </div>
+                                <div class="panel-body">
+                                    I was responsible for working on a range of projects, designing appealing websites and interacting on a daily basis with graphic designers, back-end developers and marketers.
+                                </div>
+                                <div class="panel-footer">
+                                    <!-- buttons or inputs -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="before-panel">
+                            <div class="panel boxShadowPaper">
+                                <div class="panel-header">
+                                    <div class="panel-title">2014 - 2016</div>
+                                </div>
+                                <div class="panel-nav">
+                                    <p>ENVATO</p>
+                                    <p>fullstack devlopper</p>
+                                </div>
+                                <div class="panel-body">
+                                    Worked as part of a multi-disciplinary team, carrying out ad-hoc tasks as requested by the IT Manager. Had a specific brief to ensure the websites build for customer’s precisely matched their requirements.developers and marketers.
+                                </div>
+                                <div class="panel-footer">
+                                    <!-- buttons or inputs -->
+                                </div>
+                            </div>
+                        </div>

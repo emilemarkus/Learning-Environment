@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700&display=swap');
+
+body {
+    width:70% !important;
+    margin:auto;
+    font-family: Gentium;
+    font-size:1.2em;
+    line-height: 1.5em;
+    color:rgb(33, 30, 39);
+    background: -webkit-linear-gradient(-180deg, rgb(195, 255, 160), rgb(6, 61, 3));
+    background: linear-gradient(-180deg, rgb(195, 255, 160), rgb(6, 61, 3));
+    background: url("../img/china.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    background-attachment: fixed;
+    hyphens:   none  ;
+    -webkit-hyphens:   none  ;
+    -moz-hyphens:   none  ;
+    -ms-hyphens:   none  ;
+}
+.mainpage {
+    /*background-color: rgba(13, 66, 2,0.3) !important;*/
+    background:linear-gradient(-90deg, rgba(195, 255, 160,0.5) 1%, rgba(195, 255, 160,0.8) 50%,rgba(195, 255, 160,0.5) 100%);
+    box-shadow: 1px 2px 10px rgb(206, 255, 160);
+}
+
+a {
+    background-color:yellow;
+}
+a:visited {
+    background-color:red;
+    color:#fff;
+}
+a:hover {
+    background-color:#fff;
+    color:orange;
+}
+img {
+ 
+    width:50%;
+    float:left;
+    padding:20px;
+}
+blockquote {
+    max-width: 50%;
+    text-align: center;
+    font-size:160%;
+    background-color: #c8c8c8;
+    padding:30px;
+    margin-top:80px;
+    margin-left:80px;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: 1px 2px 10px #000;
+    white-space: wrap;
+    hyphens: auto   ;
+    -webkit-hyphens: auto   ;
+    -moz-hyphens: auto   ;
+    -ms-hyphens: auto   ;
+}
+blockquote > p {
+    border-left: 3px solid rgb(66, 66, 66);
+    padding:0 !important;
+    margin:0 !important;
+}
+body > p,hr {
+    /*background-color:  rgba(240, 240, 14, 0.5) !important;*/
+    max-width:100%;
+    margin:auto;
+}
+q, p > q {
+    font-style:italic !important;
+    border-left:2px solid black;
+    max-width:50%;
+    margin-left:20px !important;
+    padding:15px;
+    display:block;
+
+}
+p {
+    padding-left:20px;
+    
+ 
+}
+h1,h2,h3,h4 {
+    padding:30px 0px 30px 20px;
+}
+h1 {
+    margin:auto;
+    width:auto;
+    text-align: center;
+    line-height: 2em;
+    margin-top:10px;
+
+}
+strong, em {
+    text-transform:capitalize;
+}
+strong {
+    color: rgb(21, 92, 21);
+}
+em {
+    color:red;
+}
+header h1 {
+    background-color:rgba(231, 231, 137,0.8);
+}
+
+header {margin:0 !important;padding:0;}
+tr:nth-child(odd){
+    background-color: #fff;
+}
+table{
+    max-width:50vw;
+    margin:auto;
+}
+td {
+    border:1px solid #000;
+    text-align: center;
+    padding:5px 10px;
+}
+tr:nth-child(even){
+    background-color:rgb(11, 34, 9);
+    color:#fff;
+}
+dl dd:nth-child(1) {    
+    background-image: url("https://raw.githubusercontent.com/becodeorg/CRL-Woods-2.15/master/Parcours/01-Prairie/5.HTML-CSS/progressive-enhancement/bien.png?token=ANEUXB4BXWIO5KAVXMFHT225RACJG");
+    background-size:25px;
+    padding-left:30px;
+    background-repeat: no-repeat;
+}
+dl dd:nth-child(2) {    
+    background-image: url("https://raw.githubusercontent.com/becodeorg/CRL-Woods-2.15/master/Parcours/01-Prairie/5.HTML-CSS/progressive-enhancement/mal.png?token=ANEUXB6VUY4KK4PLBPTVE725RACZ6");
+    background-size:25px;
+    padding-left:30px;
+    background-repeat: no-repeat;
+}
+dl dd:nth-child(3) {    
+    background-image: url("https://raw.githubusercontent.com/becodeorg/CRL-Woods-2.15/master/Parcours/01-Prairie/5.HTML-CSS/progressive-enhancement/chat.png?token=ANEUXB2OBRZY5YKOLDHQHEK5RAC5Q");
+    background-size:25px;
+    padding-left:30px;
+    background-repeat: no-repeat;
+}
+p:nth-child(5){
+    font-weight:bold;
+}
+
+q.fermier {
+    color:rgb(143, 12, 12);
+    border-left-color:rgb(143,12,12);
+    padding-left:20px !important;
+;}
+
+.village {
+    color: rgb(67, 19, 107);
+    border-left-color:rgb(67,19,107);
+}
+aside {
+    position:fixed;
+    display:block;
+    top:30px;
+    left:5px;
+    max-width:10vw;
+    padding:15px;
+    background-color:rgb(20, 61, 20);
+    border:5px solid rgb(54, 117, 54);
+    text-align: center;
+
+}
+aside a{
+    background-color: none !important;
+    text-decoration:none;
+    text-overflow: clip;
+    hyphens: auto   ;
+    -webkit-hyphens: auto   ;
+    -moz-hyphens: auto   ;
+    -ms-hyphens: auto   ;
+}
+aside > a:visited {
+    background-color: rgb(20, 61, 20);;
+}
+/****************************************************************/
+/* le test couleur */
+/****************************************************************/
+/*
+body {
+    background-color:gray;
+}
+body > p {
+    background-color:  rgba(240, 240, 14, 0.5) !important;
+}
+header {
+    background-color: rgba(255, 123, 0, 0.5);
+}
+ul {
+    background-color: #adf262;
+}
+
+
+*/

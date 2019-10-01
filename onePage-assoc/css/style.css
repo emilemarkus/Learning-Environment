@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:200,400|Roboto+Condensed:400,700&display=swap');
+
+/* initialisation */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Roboto Condensed";
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toLine {
+    margin: 10px 0;
+}
+
+
+/* layout*****************************************************************************************/
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center
+}
+
+
+/* navigation **************************************************************************************/
+
+#navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #091c46;
+}
+
+#navigation ul {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+}
+
+#navigation .nav-link {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 230, 109, 0);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+}
+
+#navigation .nav-link:hover {
+    border: 2px solid rgba(255, 230, 109, 0.3)
+}
+
+
+/*  slide show ***********************************************************************************/
+
+#slideshow {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+#slideshow .image {
+    width: 100%;
+    height: 100%;
+    background: url('../media/people-1550501_1920.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    animation: imageAnimation 30s infinite alternate 0s
+}
+
+#texteOnSlide h1 {
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 25vw;
+    padding: 30px 50px;
+    font-family: "Poppins";
+    color: #FDB906;
+    background-color: rgba(190, 187, 172, 0.5);
+    box-shadow: 1px 1px 10px 1px rgb(204, 204, 167);
+    text-align: center;
+}
+
+
+/* About us *****************************************************************************************/
+
+article[title="aboutUs"] .section-titre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+article[title="aboutUs"] button {
+    margin-top: 10px;
+}
+
+article[title="aboutUs"] h1 {
+    margin-top: 20px;
+    padding: 10px 50px;
+    color: #ffe66d;
+    background-color: #091c46;
+    border-bottom: 2px solid #f25f5c;
+    align-self: center;
+    font-family: "Roboto Condensed";
+    font-size: 2em;
+}
+
+article[title="aboutUs"] p.liner {
+    align-self: center;
+    margin-top: 20px;
+    min-width: 5vw;
+    border-bottom: 3px solid #091c46;
+}
+
+div.carde {
+    width: 40%;
+    padding: 0 20px;
+    clear: both;
+}
+
+div.carde img {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+div.carde ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+
+/** actions ****************************************************************/
+
+article[title="actions"] {
+    margin-top: 30px;
+    background-color: #247ba0;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+article[title="actions"] h1 {
+    align-self: center;
+    color: #fff;
+    margin: 20px 0;
+    font-size: 3em;
+}
+
+article[title="actions"] .explication {
+    background-color: #fff;
+    width: 90%;
+    align-self: center;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+article[title="actions"] .explication p {
+    margin-bottom: 30px;
+}
+
+
+/* caption */
+
+#caption-table {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100% !important;
+}
+
+#caption-table div.caption {
+    position: relative;
+    width: 18% !important;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 0 20px;
+}
+
+#caption-table div.caption .titre {
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+#caption-table .caption img {
+    max-width: 100%;
+    margin: auto;
+}
+
+#caption-table .caption .texte {
+    font-size: 1em;
+    word-wrap: break-word;
+    text-justify: auto;
+}
+
+button {
+    float: right;
+    color: #fff;
+    background-color: #00a896;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    filter: invert(500%);
+}
+
+
+/* citation */
+
+.citation {
+    position: relative;
+    background-color: #f5c800;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.citation q {
+    padding: 30px 0px;
+    margin: auto;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 2vw;
+    width: 70%;
+}
+
+.citation small {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.citation blockquote::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    padding-right: 20px;
+}
+
+.citation blockquote::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    padding-left: 20px;
+}
+
+
+/**** actualité **** */
+
+article[title="actus"] {
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+article[title="actus"] h1 {
+    width: 100%;
+    text-align: left;
+}
+
+article[title="actus"] .container {
+    display: flex;
+    flex-direction: row;
+    min-height: 45vh;
+    margin: 20px 10%;
+}
+
+article[title="actus"] img {
+    max-width: 100%;
+}
+
+article[title="actus"] .txtActu {
+    margin: 30px;
+}
+
+
+/*  footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #111318;
+    color: #fff;
+}
+
+footer ul {
+    width: 100%;
+}
+
+footer ul li {
+    float: left;
+    padding: 20px 15px;
+}
+
+footer ul li:last-of-type {
+    float: right;
+}
+
+
+/* slideshow top */
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 1;
+        -moz-animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        -moz-transform: scale(1.05);
+    }
+    17% {
+        opacity: 1;
+        -moz-transform: rotateX(90);
+        -moz-transform: scale(1.1);
+    }
+    25% {
+        opacity: 1;
+        -moz-transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 1;
+        -moz-animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        -moz-transform: scale(1.05);
+    }
+    17% {
+        opacity: 1;
+        -moz-transform: rotate(90);
+        -moz-transform: scale(1.1);
+    }
+    25% {
+        opacity: 1;
+        -moz-transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+    }
+}

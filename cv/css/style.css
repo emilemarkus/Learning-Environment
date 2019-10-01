@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,600&display=swap');
+body {
+    width: 100%;
+    font-family: "Raleway";
+    font-size: 0.8m;
+    line-height: 1.5em;
+}
+
+.wrapper {
+    width: 70%;
+    margin: auto;
+    background-color: rgb(247, 242, 242);
+}
+
+ul {
+    list-style: none;
+}
+
+*[class^="col-"] {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+#header {
+    padding-top: 20px;
+}
+
+.myName {
+    font-size: 3em;
+    margin-left: 2em;
+    margin-bottom: 5px !important;
+    border-bottom: 2px solid rgb(175, 92, 92);
+    font-family: "Pacifico";
+    color: rgb(175, 92, 92);
+}
+
+.subTitle {
+    float: right;
+    margin-top: 0 !important;
+    font-weight: 600;
+}
+
+#myPic img {
+    border: 8px solid #fff;
+}
+
+.titre {
+    display: inline;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgb(192, 54, 54);
+    padding: 0 10px;
+}
+
+.liner {
+    display: block;
+    content: " ";
+    width: 95%;
+    border-bottom: 2px solid rgb(192, 54, 54);
+    background-color: none;
+    ;
+}
+
+*[id^="job"] {
+    padding-bottom: 20px;
+}
+
+.column p {
+    margin-bottom: 3px;
+}
+
+.jobFonction {
+    color: rgb(46, 46, 124);
+    font-weight: 600;
+}
+
+.companyName {
+    color: orangered;
+    font-weight: 600;
+}
+
+#skills .skill-title {
+    display: inline-block;
+    color: #fff;
+    background-color: olivedrab !important;
+    padding: 5px 15px;
+}
+
+.skill-items {
+    list-style: circle;
+    margin-left: 35px;
+    text-transform: capitalize;
+}

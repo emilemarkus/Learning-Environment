@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
+body {
+    background: url("../media/background-space2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: "Roboto Condensed";
+}
+
+.secondback {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: 200% 200%;
+    transition: 2s;
+    opacity: 0.5;
+    background: url("../media/background-space.jpg");
+    animation: backgroundAnim 10s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 3em;
+    text-shadow: 0px 1px 5px red;
+}
+
+#page404 {
+    left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#page404>div {
+    margin: 50px;
+}
+
+.quatre {
+    display: grid;
+    grid-template-rows: 20vh 20vh 20vh;
+}
+
+#zero {
+    display: grid;
+    grid-template-columns: 3vw 3vw 3vw 3vw 3vw 3vw;
+}
+
+div.quatre_block1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3vw 3vw 3vw 3vw 3vw 3vw;
+}
+
+div.quatre_block2 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3vw 3vw 3vw 3vw 3vw 3vw;
+}
+
+div.quatre_block3 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3vw 3vw 3vw 3vw 3vw 3vw;
+}
+
+.show {
+    display: block;
+    width: 2vw;
+    height: 3vh;
+    content: " ";
+    white-space: pre;
+    /*background-image: url('../media/sprite.png');
+    background-size: cover;*/
+    animation: shake 5s cubic-bezier(0.075, var(--posX), 0.3, var(--posY)) infinite;
+    backface-visibility: hidden;
+    perspective: 500px;
+}
+
+.vaisseau {
+    position: absolute;
+    top: 90vh;
+    background-image: url('../media/all_white.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 90px;
+    background-size: cover;
+    background-position: 0% 100%;
+    animation: sliding linear infinite;
+    animation: sliding;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay: 0;
+}
+
+.redShip {
+    position: absolute;
+    top: 10vh;
+    background-image: url('../media/all_red.png');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 90px;
+    background-size: cover;
+    background-position: 0% 100%;
+    animation: sliding2 linear infinite;
+    animation-duration: 20s;
+    animation-delay: 5;
+}
+
+.redShip:hover {
+    background-image: url("../media/all_red_boum.png");
+}
+
+@keyframes {
+    0% {
+        background-image: url('../media/all_red_boum.png');
+    }
+    100% {
+        background-image: url('../media/all_red.png');
+    }
+}
+
+.hidden {
+    display: block;
+    width: 2vw;
+    height: 3vh;
+    content: " ";
+    white-space: pre;
+}
+
+.quatre_01 {
+    grid-area: 1f;
+}
+
+.quatre_02 {
+    grid-area: 2f
+}
+
+.quatre_03 {
+    grid-area: 3f;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    position: absolute;
+    display: block;
+    width: 300px;
+    padding: 30px 10px;
+    background-color: green;
+    color: #fff;
+    border: 2px solid #fff;
+    ;
+    margin: auto;
+    text-align: center;
+    left: 40%;
+    top: 70%;
+    opacity: 0.5;
+    z-index: 99999999;
+}
+
+
+/* animation shake */
+
+@keyframes sliding {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(90vw);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes backgroundAnim {
+    0% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.2;
+    }
+}
+
+@keyframes sliding2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: perspective(500px) translate3d(0px, 0px, 0px);
+    }
+    10% {
+        transform: perspective(500px) translate3d(0px, 0px, 10px);
+    }
+    19% {
+        transform: perspective(500px) translate3d(0px, 0px, 20px);
+    }
+    75% {
+        transform: perspective(500px) translate3d(0px, 10px, 15px);
+    }
+    20%,
+    100% {
+        transform: perspective(500px) translate3d(0px, 5px, 30px);
+        transform: rotate(90deg);
+    }
+}

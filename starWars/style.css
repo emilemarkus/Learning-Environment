@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+    background-image: url("background.png");
+    background-size: cover;
+}
+
+.screener {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    //border: 3px solid yellow;
+    perspective: 400px;
+    overflow: hidden;
+}
+
+.fading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 60%, black 90%);
+    z-index: 99999999;
+}
+
+.titre {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 100%;
+    color: #02E6DF;
+    font-size: 4em;
+    text-shadow: 2px 2px 10px #02E6DF;
+    animation: fading 4s linear;
+    -webkit-animation: fading 4s linear;
+    opacity: 0;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.titre p {
+    margin: 0 !important;
+}
+
+.openingCrawl {
+    text-align: center;
+    color: yellow;
+    font-size: 3em;
+    transform: rotateX(35deg) scaleX(2);
+    animation: sliding 50s linear;
+    animation-delay: 30s;
+    width: 100%;
+    -webkit-transform: rotateX(35deg) scaleX(2);
+    -moz-transform: rotateX(35deg) scaleX(2);
+    -ms-transform: rotateX(35deg) scaleX(2);
+    -o-transform: rotateX(35deg) scaleX(2);
+    -webkit-animation: sliding 50s linear;
+    padding: 0px 200px;
+}
+
+@keyframes sliding {
+    0% {
+        transform: rotateX(30deg) translateY(1000px);
+        -webkit-transform: rotateX(30deg) translateY(1000px);
+        -moz-transform: rotateX(30deg) translateY(1000px);
+        -ms-transform: rotateX(30deg) translateY(1000px);
+        -o-transform: rotateX(30deg) translateY(1000px);
+    }
+    100% {
+        transform: rotateX(30deg) translateY(-2500px);
+        -webkit-transform: rotateX(30deg) translateY(-2500px);
+        -moz-transform: rotateX(30deg) translateY(-2500px);
+        -ms-transform: rotateX(30deg) translateY(-2500px);
+        -o-transform: rotateX(30deg) translateY(-2500px);
+    }
+}

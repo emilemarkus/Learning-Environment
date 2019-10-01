@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap');
+* {
+    padding:0;
+    margin:0;
+}
+/****************************************************************/
+/* la structure */
+/****************************************************************/
+body {
+    width:60%;
+    margin:auto;
+    font-size: 1.1em;
+    text-align:center;  }
+p,header {
+    max-width:90%;
+    margin:auto;   
+    margin-bottom:10px; 
+    
+}
+hr {
+    width:70%;
+}
+img {
+    width:auto;
+    max-width:90%;
+}
+#time {
+    max-width:50%;
+    margin:auto;
+}
+blockquote {
+    max-width:50%;
+    margin:80px auto;
+    }
+
+ul {
+ max-width:90%;
+ margin:auto;  
+ margin-top:5vh;
+ margin-bottom:5vh;
+}
+li {
+    margin-left:5%
+}
+figure {
+    margin: 5vh 0vh;
+}
+h1,h2,h3,h4 {
+        margin-top: 4vh;
+        text-align:left;
+        margin-left:3vw;
+}
+header>h2{
+    text-align:center;
+}
+hr, table {
+    margin:auto;
+}
+hr {
+    margin:4vh auto;
+}
+/****************************************************************/
+/* typographie*/
+/****************************************************************/
+body {
+    text-rendering: geometricPrecision; 
+    font-family: lora;
+    font-size:1.3em;
+    background: linear-gradient(0deg, rgba(0, 216, 108, 0.8) 0%, rgb(85, 178, 240) 100%);
+    background-image:url("../img/china.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+p {
+    text-align:left;
+    line-height:1.8em;
+}
+blockquote {
+    font-size:160%;
+    padding:30px;
+}
+p#time {
+    font-size:80%;
+    text-align: center;
+}
+ul {
+    text-align:left;
+}
+li {
+    text-align:left;
+    list-style: square;
+
+}
+/***************************************************************/
+/* le style */
+/****************************************************************/
+main {
+    background-color: rgba(255,255,255,0.3) !important;
+}
+.bien {
+    color:rgb(255, 255, 255);
+}
+.mal {
+    color:red;
+    font-weight:bold;
+}
+blockquote {
+    background-color:rgb(165, 165, 165);
+    color:#000;
+    border:3px solid rgb(212, 46, 5);
+}
+.paysan {
+    color:yellow;
+    margin-left:10px !important;
+}
+.fermier {
+    color: rgb(159, 0, 165);
+    margin-left:50px !important;
+}
+q {
+    font-style: italic !important   ;
+    color:red !important;
+    width: 100px !important;
+}
+
+/****************************************************************/
+/* le test couleur */
+/****************************************************************/
+/*
+body {
+    background-color:gray;
+}
+p {
+    background-color:  rgba(240, 240, 14, 0.5);
+}
+header {
+    background-color: rgba(255, 123, 0, 0.5);
+}
+ul {
+    background-color: #adf262;
+}
+*/
